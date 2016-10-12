@@ -7,13 +7,9 @@
     <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script></head>
 <body>
 <a-scene>
-        <a-assets>
-            <a-mixin id="red" material="color: red"></a-mixin>
-            <a-mixin id="blue" material="color: blue"></a-mixin>
-            <a-mixin id="cube" geometry="primitive: box"></a-mixin>
-        </a-assets>
-        <a-entity mixin="red cube"></a-entity>
-        <a-entity mixin="blue cube"></a-entity>
+    <a-box color="#6173F4" opacity="0.8" depth="2"></a-box>
+    <a-sphere radius="2" src="texture.png" position="1 1 0"></a-sphere>
+    <a-sky color="#ECECEC"></a-sky>
 </a-scene>
 </body>
 </html>
